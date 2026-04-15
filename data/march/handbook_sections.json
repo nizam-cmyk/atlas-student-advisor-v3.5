@@ -1,0 +1,158 @@
+{
+  "version": "march-2026-first-pass",
+  "source": "FEST Academic Handbook MARCH 2026 KLUST",
+  "sections": [
+    {
+      "id": "academic_standing",
+      "keywords": [
+        "academic standing",
+        "good status",
+        "probation",
+        "dismissal",
+        "cgpa",
+        "good standing",
+        "am i on probation",
+        "will i be dismissed"
+      ],
+      "reference": "Grading Systems and Academic Standing",
+      "summary": "Good Status applies from CGPA 2.00 and above. Academic Probation may apply when CGPA is below 2.00. Academic Dismissal may apply if CGPA remains below 2.00 for three consecutive semesters.",
+      "response_hint": "Use this section for probation, dismissal, and CGPA standing questions.",
+      "safety_note": "Do not conclude dismissal from one CGPA value alone. Consecutive semester pattern must also be considered."
+    },
+    {
+      "id": "grading_system",
+      "keywords": [
+        "grading system",
+        "grade point",
+        "gpa",
+        "cgpa calculation",
+        "grade scale",
+        "a grade",
+        "f grade"
+      ],
+      "reference": "Grading Systems",
+      "summary": "The official grade ranges are A+/A = 4.00, A- = 3.67, B+ = 3.33, B = 3.00, B- = 2.67, C+ = 2.33, C = 2.00, C- = 1.67, D+ = 1.33, D = 1.00, and F = 0.00.",
+      "response_hint": "Use this section for GPA/CGPA explanation and grade-point interpretation.",
+      "safety_note": "If the user asks for calculation, require courses, credits, and grades."
+    },
+    {
+      "id": "add_drop",
+      "keywords": [
+        "add drop",
+        "add/drop",
+        "drop course",
+        "register course",
+        "course registration",
+        "change subjects"
+      ],
+      "reference": "Add / Drop Policy",
+      "summary": "Students may add or drop courses without penalty during the first two weeks of a normal semester or the first week of a short semester. Late registration may be allowed until the fourth week of a normal semester or the second week of a short semester with approval and penalty.",
+      "response_hint": "Use this section for questions about changing registered courses early in the semester.",
+      "safety_note": "Do not extend deadlines beyond what is stated in the handbook."
+    },
+    {
+      "id": "course_withdrawal",
+      "keywords": [
+        "withdraw course",
+        "course withdrawal",
+        "w grade",
+        "withdraw from subject",
+        "drop after add drop"
+      ],
+      "reference": "Withdrawal from Course or Courses",
+      "summary": "Course withdrawal is allowed after the first two weeks but before the thirteenth week of the normal semester, or after the first week but before the seventh week of the short semester. A W grade appears on the transcript and does not count toward GPA.",
+      "response_hint": "Use this section for subject-level withdrawal questions.",
+      "safety_note": "No withdrawal is permitted after the deadline except in extraordinary circumstances."
+    },
+    {
+      "id": "university_withdrawal",
+      "keywords": [
+        "withdraw from university",
+        "leave university",
+        "quit university",
+        "withdraw completely"
+      ],
+      "reference": "Withdrawal from the University",
+      "summary": "Students may withdraw completely from the University before the thirteenth week of the normal semester or before the seventh week of the short semester, subject to Dean approval and required clearances.",
+      "response_hint": "Use this section for complete withdrawal from the University, not a single course.",
+      "safety_note": "Withdrawal is not official until the form and clearances are completed and returned to the Registrar’s Office."
+    },
+    {
+      "id": "postponement",
+      "keywords": [
+        "postponement",
+        "deferment",
+        "postpone studies",
+        "defer studies",
+        "take semester break"
+      ],
+      "reference": "Postponement Policy",
+      "summary": "Students may apply for postponement with valid reasons, subject to Dean and VP Academic approval. Postponement is not allowed after the twelfth week of the long semester or the sixth week of the short semester.",
+      "response_hint": "Use this section for deferment/postponement of studies.",
+      "safety_note": "Do not advise postponement beyond the handbook deadline."
+    },
+    {
+      "id": "important_dates_march_2026",
+      "keywords": [
+        "important dates",
+        "march 2026",
+        "registration",
+        "first day of lecture",
+        "study week",
+        "final examinations"
+      ],
+      "reference": "Important Dates March Semester 2026",
+      "summary": "Registration for new students is 22 April 2026, induction is 23–24 April 2026, first day of lecture is 27 April 2026, last day for add/drop is 01 May 2026, and final examinations run from 22 June 2026 to 02 July 2026.",
+      "response_hint": "Use this section for March 2026 intake date questions.",
+      "safety_note": "Important dates are semester-specific and should not be generalized to other intakes."
+    },
+    {
+      "id": "programme_bce",
+      "keywords": [
+        "civil engineering",
+        "ace305",
+        "bachelor of civil engineering"
+      ],
+      "reference": "ACE305 – Bachelor of Civil Engineering with Honours",
+      "summary": "ACE305 is a full-time 4-year programme with 140 credits and accepts March, June/July and Sept/Oct intakes.",
+      "response_hint": "Use this section for Civil Engineering programme and credit questions.",
+      "safety_note": "Entry requirements should be quoted carefully because they are programme-specific."
+    },
+    {
+      "id": "programme_bse",
+      "keywords": [
+        "software engineering",
+        "cit312",
+        "bachelor of software engineering"
+      ],
+      "reference": "CIT312 – Bachelor of Software Engineering (Honours)",
+      "summary": "The March 2026 handbook maps Software Engineering under CIT312.",
+      "response_hint": "Use this section for March intake Software Engineering questions.",
+      "safety_note": "Do not confuse March CIT312 with November CIT314."
+    },
+    {
+      "id": "programme_bcs",
+      "keywords": [
+        "computer science",
+        "cit311",
+        "bachelor of computer science"
+      ],
+      "reference": "CIT311 – Bachelor of Computer Science (Honours)",
+      "summary": "The March 2026 handbook maps Computer Science under CIT311.",
+      "response_hint": "Use this section for March intake Computer Science questions.",
+      "safety_note": "Do not confuse March CIT311 with November CIT313."
+    },
+    {
+      "id": "programme_dit",
+      "keywords": [
+        "diploma in information technology",
+        "dit",
+        "cit206"
+      ],
+      "reference": "CIT206 – Diploma in Information Technology",
+      "summary": "The March 2026 handbook includes CIT206 Diploma in Information Technology under Computing.",
+      "response_hint": "Use this section for DIT programme questions.",
+      "safety_note": "Where detailed duration and credit data are needed, confirm against the programme pages."
+    }
+  ]
+}

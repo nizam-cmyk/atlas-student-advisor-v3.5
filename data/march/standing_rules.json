@@ -1,0 +1,154 @@
+{
+  "version": "march-2026-first-pass",
+  "source": "FEST Academic Handbook MARCH 2026 KLUST",
+  "category": "academic_standing",
+  "grading_system": {
+    "grades": [
+      {
+        "marks_range": "95-100",
+        "grade": "A+",
+        "grade_point": 4.0,
+        "achievement": "Excellent"
+      },
+      {
+        "marks_range": "85-94",
+        "grade": "A",
+        "grade_point": 4.0,
+        "achievement": "High Distinction"
+      },
+      {
+        "marks_range": "75-84",
+        "grade": "A-",
+        "grade_point": 3.67,
+        "achievement": "Distinction"
+      },
+      {
+        "marks_range": "70-74",
+        "grade": "B+",
+        "grade_point": 3.33,
+        "achievement": "Very Good"
+      },
+      {
+        "marks_range": "65-69",
+        "grade": "B",
+        "grade_point": 3.0,
+        "achievement": "Good"
+      },
+      {
+        "marks_range": "60-64",
+        "grade": "B-",
+        "grade_point": 2.67,
+        "achievement": "Merit"
+      },
+      {
+        "marks_range": "55-59",
+        "grade": "C+",
+        "grade_point": 2.33,
+        "achievement": "Satisfactory"
+      },
+      {
+        "marks_range": "50-54",
+        "grade": "C",
+        "grade_point": 2.0,
+        "achievement": "Pass"
+      },
+      {
+        "marks_range": "47-49",
+        "grade": "C-",
+        "grade_point": 1.67,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "44-46",
+        "grade": "D+",
+        "grade_point": 1.33,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "40-43",
+        "grade": "D",
+        "grade_point": 1.0,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "0-39",
+        "grade": "F",
+        "grade_point": 0.0,
+        "achievement": "Fail, No Credit"
+      }
+    ],
+    "non_gpa_grades": [
+      {
+        "grade": "I",
+        "meaning": "Incomplete"
+      },
+      {
+        "grade": "W",
+        "meaning": "Withdrawal"
+      },
+      {
+        "grade": "Au",
+        "meaning": "Audit"
+      },
+      {
+        "grade": "P",
+        "meaning": "Pass"
+      },
+      {
+        "grade": "F",
+        "meaning": "Fail for Pass-Fail status"
+      }
+    ]
+  },
+  "rules": {
+    "good_status": {
+      "label": "Good Status",
+      "cgpa_min": 2.0,
+      "condition": "CGPA 2.00 and above",
+      "meaning": "Student is in good academic standing."
+    },
+    "probation_1": {
+      "label": "Academic Probation 1",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 1,
+      "condition": "CGPA below 2.00 for any semester",
+      "meaning": "Student may be placed on Academic Probation 1."
+    },
+    "probation_2": {
+      "label": "Academic Probation 2",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 2,
+      "condition": "CGPA below 2.00 for two consecutive semesters",
+      "meaning": "Student may be placed on Academic Probation 2."
+    },
+    "dismissal": {
+      "label": "Academic Dismissal",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 3,
+      "condition": "CGPA below 2.00 for three consecutive semesters",
+      "meaning": "Student may be dismissed."
+    }
+  },
+  "important_dates": {
+    "semester": "March Semester 2026",
+    "registration_new_students": "22 April 2026",
+    "induction_programme": "23-24 April 2026",
+    "registration_returning_students": "23-24 April 2026",
+    "first_day_of_lecture": "27 April 2026",
+    "last_day_for_add_drop": "01 May 2026",
+    "last_day_for_late_registration": "08 May 2026",
+    "lectures": "27 April 2026 - 14 June 2026",
+    "last_day_for_withdrawal_w_grade": "05 June 2026",
+    "last_day_application_for_graduation": "05 June 2026",
+    "last_day_for_postponement": "05 June 2026",
+    "last_day_settle_fees": "08 June 2026",
+    "study_week": "15-21 June 2026",
+    "final_examinations": "22 June 2026 - 02 July 2026",
+    "semester_break": "03-19 July 2026"
+  },
+  "notes": [
+    "W grade appears on transcript but is not counted toward GPA.",
+    "Academic Dismissal cannot be concluded from one CGPA value alone without checking the consecutive semester pattern."
+  ],
+  "reference": "Grading Systems and Academic Standing / Important Dates March Semester 2026"
+}

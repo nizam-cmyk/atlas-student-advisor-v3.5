@@ -1,0 +1,234 @@
+{
+  "version": "november-2025-first-pass",
+  "source": "FEST Academic Handbook NOVEMBER 2025 KLUST",
+  "programmes": [
+    {
+      "code": "ACE305",
+      "name": "Bachelor of Civil Engineering with Honours",
+      "aliases": [
+        "civil engineering",
+        "ace305",
+        "bachelor of civil engineering",
+        "bce"
+      ],
+      "faculty": "FEST",
+      "department": "Civil Engineering and Construction",
+      "award_level": "Bachelor",
+      "duration": "4 years",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 140,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Credit transfer / exemption allows up to 30% for vertical transfer and up to 50% for lateral transfer."
+      ],
+      "handbook_reference": "ACE305 – Bachelor of Civil Engineering with Honours"
+    },
+    {
+      "code": "ACE201",
+      "name": "Diploma in Civil Engineering",
+      "aliases": [
+        "diploma in civil engineering",
+        "ace201",
+        "civil diploma"
+      ],
+      "faculty": "FEST",
+      "department": "Civil Engineering and Construction",
+      "award_level": "Diploma",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 98,
+      "entry_requirements": [],
+      "programme_notes": [
+        "November academic landscape states overall total credit hours = 98."
+      ],
+      "handbook_reference": "ACE201 – Diploma in Civil Engineering Academic Landscape November Intake"
+    },
+    {
+      "code": "AEE303",
+      "name": "Bachelor of Electronics Engineering with Honours",
+      "aliases": [
+        "electronics engineering",
+        "electronic engineering",
+        "aee303",
+        "bachelor of electronics engineering"
+      ],
+      "faculty": "FEST",
+      "department": "Electrical and Electronics Engineering",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Programme section is present in the November handbook."
+      ],
+      "handbook_reference": "AEE303 – Bachelor of Electronics Engineering with Honours"
+    },
+    {
+      "code": "AME304",
+      "name": "Bachelor of Technology (Honours) in Automotive",
+      "aliases": [
+        "automotive",
+        "automotive technology",
+        "ame304",
+        "bachelor of technology in automotive"
+      ],
+      "faculty": "FEST",
+      "department": "Mechanical and Automotive Engineering",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Academic landscape clearly indicates total programme credit hours of 120."
+      ],
+      "handbook_reference": "AME304 – Bachelor of Technology (Honours) in Automotive"
+    },
+    {
+      "code": "AME303",
+      "name": "Bachelor of Mechanical Engineering with Honours",
+      "aliases": [
+        "mechanical engineering",
+        "ame303",
+        "bachelor of mechanical engineering",
+        "bme"
+      ],
+      "faculty": "FEST",
+      "department": "Mechanical and Automotive Engineering",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 135,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Year 1 total credit hours = 33",
+        "Year 2 total credit hours = 35",
+        "Year 3 total credit hours = 38",
+        "Year 4 total credit hours = 29",
+        "Industrial training must be conducted before the final semester."
+      ],
+      "handbook_reference": "AME303 academic landscape"
+    },
+    {
+      "code": "AME202",
+      "name": "Diploma in Automotive Engineering",
+      "aliases": [
+        "diploma in automotive engineering",
+        "ame202",
+        "automotive diploma"
+      ],
+      "faculty": "FEST",
+      "department": "Mechanical and Automotive Engineering",
+      "award_level": "Diploma",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [],
+      "programme_notes": [],
+      "handbook_reference": "AME202 – Diploma in Automotive Engineering"
+    },
+    {
+      "code": "CIT314",
+      "name": "Bachelor in Software Engineering (Honours)",
+      "aliases": [
+        "software engineering",
+        "cit314",
+        "bachelor in software engineering",
+        "bse"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Bachelor",
+      "duration": "3 years",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Industrial Training is 6 credits.",
+        "Industrial Training prerequisite requires completed 86 credit hours.",
+        "Final Year Project consists of IT Project I and IT Project II."
+      ],
+      "handbook_reference": "CIT314 – Bachelor in Software Engineering (Honours)"
+    },
+    {
+      "code": "CIT313",
+      "name": "Bachelor in Computer Science (Honours)",
+      "aliases": [
+        "computer science",
+        "cit313",
+        "bachelor in computer science",
+        "bcs"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Bachelor",
+      "duration": "3 years",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Computing bachelor format mapped at 120 credits in the November handbook structure."
+      ],
+      "handbook_reference": "CIT313 – Bachelor in Computer Science (Honours)"
+    },
+    {
+      "code": "CIT206",
+      "name": "Diploma in Information Technology",
+      "aliases": [
+        "dit",
+        "diploma in information technology",
+        "cit206"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Diploma",
+      "duration": "2 years 6 months",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 92,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Graduating credits stated as 92.",
+        "Industrial Training prerequisite requires completed 74 credit hours."
+      ],
+      "handbook_reference": "CIT206 – Diploma in Information Technology"
+    },
+    {
+      "code": "EAS302",
+      "name": "Bachelor of Agricultural Science (Plantation Management) (Honours)",
+      "aliases": [
+        "agricultural science",
+        "plantation management",
+        "eas302",
+        "bachelor of agricultural science"
+      ],
+      "faculty": "FEST",
+      "department": "Biotechnology & Agricultural Science",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [],
+      "programme_notes": [],
+      "handbook_reference": "EAS302 – Bachelor of Agricultural Science (Plantation Management) (Honours)"
+    },
+    {
+      "code": "EAS201",
+      "name": "Diploma in Agricultural Science (Plantation Management)",
+      "aliases": [
+        "diploma in agricultural science",
+        "plantation management diploma",
+        "eas201"
+      ],
+      "faculty": "FEST",
+      "department": "Biotechnology & Agricultural Science",
+      "award_level": "Diploma",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [],
+      "programme_notes": [],
+      "handbook_reference": "EAS201 – Diploma in Agricultural Science (Plantation Management)"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "version": "november-2025-first-pass",
+  "source": "FEST Academic Handbook NOVEMBER 2025 KLUST",
+  "graduation_rules": [
+    {
+      "programme_code": "ACE305",
+      "programme_name": "Bachelor of Civil Engineering with Honours",
+      "required_total_credits": 140,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Core civil engineering courses",
+        "MPU / university requirements",
+        "Industrial Training"
+      ],
+      "credit_breakdown": {},
+      "graduation_logic_notes": [
+        "The November handbook programme set maps ACE305 at 140 credits in the prior extracted institutional dataset.",
+        "Final graduation confirmation should also verify compulsory course completion."
+      ],
+      "handbook_reference": "ACE305 – Bachelor of Civil Engineering with Honours"
+    },
+    {
+      "programme_code": "ACE201",
+      "programme_name": "Diploma in Civil Engineering",
+      "required_total_credits": 98,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Diploma core courses",
+        "Industrial Training",
+        "Final Project",
+        "MPU requirements"
+      ],
+      "credit_breakdown": {
+        "year_1": 42,
+        "year_2": 39,
+        "year_3": 17
+      },
+      "graduation_logic_notes": [
+        "The November handbook explicitly states overall total credit hours = 98.",
+        "Industrial Training is 4 credits and Final Project is 2 credits in the November landscape."
+      ],
+      "handbook_reference": "ACE201 – Diploma in Civil Engineering Academic Landscape November Intake"
+    },
+    {
+      "programme_code": "AEE303",
+      "programme_name": "Bachelor of Electronics Engineering with Honours",
+      "required_total_credits": null,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Programme compulsory courses",
+        "Practical Training",
+        "Thesis / design project"
+      ],
+      "credit_breakdown": {},
+      "graduation_logic_notes": [
+        "November handbook exact total graduating credits still need a second-pass extraction."
+      ],
+      "handbook_reference": "AEE303 – Bachelor of Electronics Engineering with Honours"
+    },
+    {
+      "programme_code": "AME304",
+      "programme_name": "Bachelor of Technology (Honours) in Automotive",
+      "required_total_credits": 120,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Programme compulsory courses",
+        "Project",
+        "Industrial Training",
+        "MPU requirements"
+      ],
+      "credit_breakdown": {},
+      "graduation_logic_notes": [
+        "Academic landscape indicates total programme credits of 120 in the November institutional extraction."
+      ],
+      "handbook_reference": "AME304 – Bachelor of Technology (Honours) in Automotive"
+    },
+    {
+      "programme_code": "AME303",
+      "programme_name": "Bachelor of Mechanical Engineering with Honours",
+      "required_total_credits": 135,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Programme compulsory courses",
+        "Industrial Training",
+        "Thesis Project I",
+        "Thesis Project II",
+        "Final examination pass requirement for mechanical subjects",
+        "Electives"
+      ],
+      "credit_breakdown": {
+        "year_1": 33,
+        "year_2": 35,
+        "year_3": 38,
+        "year_4": 29
+      },
+      "graduation_logic_notes": [
+        "Mechanical engineering students must pass the final examination for mechanical subjects as a mandatory requirement to pass the subject.",
+        "Industrial training must be conducted before the final semester."
+      ],
+      "handbook_reference": "AME303 academic landscape and passing condition"
+    },
+    {
+      "programme_code": "CIT314",
+      "programme_name": "Bachelor in Software Engineering (Honours)",
+      "required_total_credits": 120,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Core modules",
+        "Field electives",
+        "Free electives",
+        "Final Year Project",
+        "Industrial Training",
+        "MPU / university requirements"
+      ],
+      "credit_breakdown": {
+        "year_1": 39,
+        "year_2": 42,
+        "year_3": 39,
+        "final_year_project": 7,
+        "industrial_training": 6
+      },
+      "graduation_logic_notes": [
+        "The November handbook explicitly states overall total credit hours = 120.",
+        "Final Year Project consists of IT Project I (3 credits) and IT Project II (4 credits).",
+        "Industrial Training is 6 credits and requires completed 86 credit hours.",
+        "Apprenticeship may replace Industrial Training with approval from the Industrial Training Coordinator."
+      ],
+      "handbook_reference": "CIT314 – Bachelor in Software Engineering (Honours) Academic Landscape November Intake"
+    },
+    {
+      "programme_code": "CIT313",
+      "programme_name": "Bachelor in Computer Science (Honours)",
+      "required_total_credits": 120,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Core modules",
+        "Field electives",
+        "Free electives",
+        "Final Year Project",
+        "Industrial Training",
+        "MPU / university requirements"
+      ],
+      "credit_breakdown": {
+        "year_1": 39,
+        "year_2": 42,
+        "year_3": 39,
+        "final_year_project": 7,
+        "industrial_training": 6
+      },
+      "graduation_logic_notes": [
+        "The November handbook explicitly states overall total credit hours = 120.",
+        "Industrial Training requires completed 86 credit hours.",
+        "Final Year Project consists of IT Project I and IT Project II."
+      ],
+      "handbook_reference": "CIT313 – Bachelor in Computer Science (Honours) Academic Landscape November Intake"
+    },
+    {
+      "programme_code": "CIT206",
+      "programme_name": "Diploma in Information Technology",
+      "required_total_credits": 92,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Compulsory diploma courses",
+        "Core computing courses",
+        "Discipline core courses",
+        "Free elective",
+        "Project",
+        "Industrial Training"
+      ],
+      "credit_breakdown": {
+        "compulsory_courses_general_hep": 17,
+        "core_computing_courses": 35,
+        "discipline_core_courses": 27,
+        "free_electives": 3,
+        "project": 4,
+        "industrial_training": 6
+      },
+      "graduation_logic_notes": [
+        "The November institutional extraction maps CIT206 at 92 credits.",
+        "Industrial Training prerequisite requires completed 74 credit hours.",
+        "IT Project prerequisite requires completed 61 credit hours inclusive of CSC1004D, CSC1503D, CSC1402D and CSC2341D."
+      ],
+      "handbook_reference": "CIT206 – Diploma in Information Technology Academic Landscape"
+    },
+    {
+      "programme_code": "EAS302",
+      "programme_name": "Bachelor of Agricultural Science (Plantation Management) (Honours)",
+      "required_total_credits": null,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Programme compulsory agricultural science courses",
+        "Industrial Training",
+        "MPU requirements"
+      ],
+      "credit_breakdown": {},
+      "graduation_logic_notes": [
+        "November handbook exact total graduating credits still need a second-pass extraction."
+      ],
+      "handbook_reference": "EAS302 – Bachelor of Agricultural Science (Plantation Management) (Honours)"
+    },
+    {
+      "programme_code": "EAS201",
+      "programme_name": "Diploma in Agricultural Science (Plantation Management)",
+      "required_total_credits": null,
+      "cgpa_min_for_good_status": 2.0,
+      "required_components": [
+        "Programme compulsory agricultural diploma courses",
+        "Industrial Training"
+      ],
+      "credit_breakdown": {},
+      "graduation_logic_notes": [
+        "November handbook exact total graduating credits still need a second-pass extraction."
+      ],
+      "handbook_reference": "EAS201 – Diploma in Agricultural Science (Plantation Management)"
+    }
+  ]
+}

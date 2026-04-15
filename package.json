@@ -1,0 +1,9 @@
+{
+  "name": "atlas-student-advisor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  }
+}

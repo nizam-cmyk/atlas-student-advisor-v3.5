@@ -1,0 +1,97 @@
+{
+  "version": "november-2025-first-pass",
+  "source": "FEST Academic Handbook NOVEMBER 2025 KLUST",
+  "chunks": [
+    {
+      "id": "chunk_academic_standing_01",
+      "topic": "academic_standing",
+      "keywords": ["probation", "dismissal", "cgpa", "good status"],
+      "reference": "Grading Systems and Academic Standing",
+      "text": "Good Status applies from CGPA 2.00 and above. Academic Probation may apply when CGPA is below 2.00. Academic Dismissal may apply if CGPA remains below 2.00 for three consecutive semesters."
+    },
+    {
+      "id": "chunk_grading_01",
+      "topic": "grading_system",
+      "keywords": ["grade point", "grading system", "gpa", "cgpa"],
+      "reference": "Grading Systems",
+      "text": "The official grading system includes A+/A = 4.00, A- = 3.67, B+ = 3.33, B = 3.00, B- = 2.67, C+ = 2.33, C = 2.00, C- = 1.67, D+ = 1.33, D = 1.00, and F = 0.00."
+    },
+    {
+      "id": "chunk_add_drop_01",
+      "topic": "add_drop",
+      "keywords": ["add/drop", "add drop", "register course", "drop course"],
+      "reference": "Add / Drop Policy",
+      "text": "Students may add courses without penalty up to the end of the first two weeks of a normal semester or the first week of a short semester. Late registration may be allowed until the fourth week of a normal semester or the second week of a short semester with approval and a RM50 penalty per course."
+    },
+    {
+      "id": "chunk_course_withdrawal_01",
+      "topic": "course_withdrawal",
+      "keywords": ["withdraw course", "w grade", "withdrawal from course"],
+      "reference": "Withdrawal from Course or Courses",
+      "text": "Course withdrawal is allowed after the add/drop period but before the thirteenth week of the normal semester or the seventh week of the short semester. A W grade appears on the transcript and does not count toward GPA."
+    },
+    {
+      "id": "chunk_university_withdrawal_01",
+      "topic": "university_withdrawal",
+      "keywords": ["withdraw from university", "leave university", "withdraw completely"],
+      "reference": "Withdrawal from the University",
+      "text": "Students may withdraw completely from the University before the thirteenth week of the normal semester or the seventh week of the short semester, subject to required approvals and clearances."
+    },
+    {
+      "id": "chunk_postponement_01",
+      "topic": "postponement",
+      "keywords": ["postponement", "deferment", "postpone studies", "defer studies"],
+      "reference": "Postponement Policy",
+      "text": "Students may apply for postponement with valid reasons, subject to approval by the Dean and VP Academic. Postponement is not allowed after the twelfth week of the long semester or after the sixth week of the short semester."
+    },
+    {
+      "id": "chunk_important_dates_01",
+      "topic": "important_dates",
+      "keywords": ["november 2025", "registration", "lecture", "study week", "final examinations"],
+      "reference": "Important Dates November 2025",
+      "text": "For November 2025, registration for new students is 26 November 2025, first day of lecture is 01 December 2025, last day for add/drop is 12 December 2025, and final examinations run from 26 March 2026 to 05 April 2026."
+    },
+    {
+      "id": "chunk_bce_01",
+      "topic": "programme_bce",
+      "keywords": ["civil engineering", "ace305", "bachelor of civil engineering"],
+      "reference": "ACE305 – Bachelor of Civil Engineering with Honours",
+      "text": "Bachelor of Civil Engineering with Honours is mapped at 140 total credit hours in the November dataset."
+    },
+    {
+      "id": "chunk_ace201_01",
+      "topic": "programme_ace201",
+      "keywords": ["diploma in civil engineering", "ace201", "civil diploma"],
+      "reference": "ACE201 – Diploma in Civil Engineering Academic Landscape November Intake",
+      "text": "ACE201 Diploma in Civil Engineering is mapped at 98 total credit hours in the November intake academic landscape."
+    },
+    {
+      "id": "chunk_bse_01",
+      "topic": "programme_bse",
+      "keywords": ["software engineering", "cit314", "bachelor in software engineering"],
+      "reference": "CIT314 – Bachelor in Software Engineering (Honours)",
+      "text": "Bachelor in Software Engineering (Honours) is mapped at 120 total credit hours. Industrial Training is 6 credits, and the Industrial Training prerequisite requires completed 86 credit hours."
+    },
+    {
+      "id": "chunk_bcs_01",
+      "topic": "programme_bcs",
+      "keywords": ["computer science", "cit313", "bachelor in computer science"],
+      "reference": "CIT313 – Bachelor in Computer Science (Honours)",
+      "text": "Bachelor in Computer Science (Honours) is mapped at 120 total credit hours in the November intake dataset."
+    },
+    {
+      "id": "chunk_dit_01",
+      "topic": "programme_dit",
+      "keywords": ["diploma in information technology", "cit206", "dit"],
+      "reference": "CIT206 – Diploma in Information Technology",
+      "text": "Diploma in Information Technology is mapped at 92 total credit hours and 2 years 6 months in the November intake dataset."
+    },
+    {
+      "id": "chunk_computing_pass_rule_01",
+      "topic": "computing_pass_rule",
+      "keywords": ["computing pass rule", "coursework", "final exam", "must pass both"],
+      "reference": "Condition for Passing Courses for Computing Programmes",
+      "text": "All students from the Computing programmes must pass both coursework and final examination for computing subjects as a mandatory requirement to pass the subject. The pass condition is 40% in formative and 40% in summative assessment components."
+    }
+  ]
+}

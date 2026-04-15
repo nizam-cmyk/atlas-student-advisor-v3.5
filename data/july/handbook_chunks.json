@@ -1,0 +1,83 @@
+{
+  "version": "july-2025-first-pass",
+  "source": "FEST Academic Handbook JUNE/JULY 2025 KLUST",
+  "chunks": [
+    {
+      "id": "chunk_academic_standing_01",
+      "topic": "academic_standing",
+      "keywords": ["probation", "dismissal", "cgpa", "good status"],
+      "reference": "Grading Systems and Academic Standing",
+      "text": "Good Status applies from CGPA 2.00 and above. Academic Probation may apply when CGPA is below 2.00. Academic Dismissal may apply if CGPA remains below 2.00 for three consecutive semesters."
+    },
+    {
+      "id": "chunk_grading_01",
+      "topic": "grading_system",
+      "keywords": ["grade point", "grading system", "gpa", "cgpa"],
+      "reference": "Grading Systems",
+      "text": "The official grading system includes A+/A = 4.00, A- = 3.67, B+ = 3.33, B = 3.00, B- = 2.67, C+ = 2.33, C = 2.00, C- = 1.67, D+ = 1.33, D = 1.00, and F = 0.00."
+    },
+    {
+      "id": "chunk_add_drop_01",
+      "topic": "add_drop",
+      "keywords": ["add/drop", "add drop", "register course", "drop course"],
+      "reference": "Add / Drop Policy",
+      "text": "Students may add courses without penalty up to the end of the first two weeks of a normal semester or the first week of a short semester. Late registration may be allowed up to the fourth week of a normal semester or second week of a short semester with approval and a RM50 penalty per course."
+    },
+    {
+      "id": "chunk_course_withdrawal_01",
+      "topic": "course_withdrawal",
+      "keywords": ["withdraw course", "w grade", "withdrawal from course"],
+      "reference": "Withdrawal from Course or Courses",
+      "text": "Course withdrawal is allowed after the first two weeks but before the thirteenth week of the normal semester, or after the first week but before the seventh week of the short semester. A W grade appears on the transcript and does not count toward GPA."
+    },
+    {
+      "id": "chunk_university_withdrawal_01",
+      "topic": "university_withdrawal",
+      "keywords": ["withdraw from university", "leave university", "withdraw completely"],
+      "reference": "Withdrawal from the University",
+      "text": "Students may withdraw completely from the University before the thirteenth week of the normal semester or before the seventh week of the short semester, subject to required approvals and clearances."
+    },
+    {
+      "id": "chunk_postponement_01",
+      "topic": "postponement",
+      "keywords": ["postponement", "deferment", "postpone studies", "defer studies"],
+      "reference": "Postponement Policy",
+      "text": "Students may apply for postponement with valid reasons, subject to approval by the Dean and VP Academic. Postponement is not allowed after the twelfth week of the long semester or after the sixth week of the short semester."
+    },
+    {
+      "id": "chunk_important_dates_01",
+      "topic": "important_dates",
+      "keywords": ["july 2025", "june july 2025", "registration", "lecture", "study week", "final examinations"],
+      "reference": "Academic Calendar for June/July 2025",
+      "text": "For June/July 2025, registration for new students is 2 July 2025, first day of lecture is 7 July 2025, last day for add/drop is 18 July 2025, and final examinations run from 27 October 2025 to 9 November 2025."
+    },
+    {
+      "id": "chunk_bce_01",
+      "topic": "programme_bce",
+      "keywords": ["civil engineering", "ace305", "bachelor of civil engineering"],
+      "reference": "ACE305 – Bachelor of Civil Engineering with Honours",
+      "text": "ACE305 is a full-time 4-year programme with 140 credits. The handbook lists March, June/July and Sept/Oct intakes."
+    },
+    {
+      "id": "chunk_bse_01",
+      "topic": "programme_bse",
+      "keywords": ["software engineering", "cit314", "bachelor in software engineering"],
+      "reference": "CIT314 – Bachelor in Software Engineering (Honours)",
+      "text": "The June/July 2025 handbook uses CIT314 for Bachelor in Software Engineering (Honours) with a 120-credit structure."
+    },
+    {
+      "id": "chunk_bcs_01",
+      "topic": "programme_bcs",
+      "keywords": ["computer science", "cit313", "bachelor in computer science"],
+      "reference": "CIT313 – Bachelor in Computer Science (Honours)",
+      "text": "The June/July 2025 handbook uses CIT313 for Bachelor in Computer Science (Honours) with a 120-credit structure."
+    },
+    {
+      "id": "chunk_dit_01",
+      "topic": "programme_dit",
+      "keywords": ["diploma in information technology", "cit206", "dit"],
+      "reference": "CIT206 – Diploma in Information Technology",
+      "text": "The July intake structure includes CIT206 Diploma in Information Technology with 92 total credit hours."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "student_id_intake_rules": [
+    {
+      "third_digit": "1",
+      "intake": "march",
+      "label": "March Intake Handbook",
+      "version": "2026-03"
+    },
+    {
+      "third_digit": "2",
+      "intake": "july",
+      "label": "June/July Intake Handbook",
+      "version": "2025-07"
+    },
+    {
+      "third_digit": "3",
+      "intake": "november",
+      "label": "November Intake Handbook",
+      "version": "2025-11"
+    }
+  ]
+}

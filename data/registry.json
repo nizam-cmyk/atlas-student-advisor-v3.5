@@ -1,0 +1,25 @@
+{
+  "handbooks": [
+    {
+      "intake": "march",
+      "label": "March Intake Handbook",
+      "version": "2026-03",
+      "source_file": "sources/march_handbook.pdf",
+      "data_folder": "data/march"
+    },
+    {
+      "intake": "july",
+      "label": "June/July Intake Handbook",
+      "version": "2025-07",
+      "source_file": "sources/july_handbook.pdf",
+      "data_folder": "data/july"
+    },
+    {
+      "intake": "november",
+      "label": "November Intake Handbook",
+      "version": "2025-11",
+      "source_file": "sources/november_handbook.pdf",
+      "data_folder": "data/november"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "version": "march-2026-first-pass",
+  "source": "FEST Academic Handbook MARCH 2026 KLUST and institutional ROF-05 source previously uploaded",
+  "forms": [
+    {
+      "form_code": "ROF-05",
+      "form_name": "Academic Dismissal Appeal Form",
+      "category": "appeal",
+      "purpose": "Used by a student who wishes to appeal after academic dismissal.",
+      "when_to_use": [
+        "Immediately after dismissal"
+      ],
+      "submission_deadline": "Within the first two weeks of the semester",
+      "submit_to": [
+        "Faculty Academic Office"
+      ],
+      "required_fields": [
+        "Name",
+        "Student ID",
+        "Correspondence address",
+        "Passport / IC number",
+        "Contact number(s)",
+        "Sponsorship body",
+        "Programme",
+        "Intake",
+        "Total credits earned",
+        "Previous GPA",
+        "Previous CGPA",
+        "Expected date of graduation",
+        "Credits needed to complete",
+        "Number of appeal(s)",
+        "Reason(s) for appeal",
+        "Explanation",
+        "Student signature",
+        "Date"
+      ],
+      "appeal_reasons_listed": [
+        "Health Problem",
+        "Financial Problem",
+        "Personal Problem",
+        "Academic Problem"
+      ],
+      "required_attachments": [
+        "Semester results",
+        "Academic Plan discussed with Academic Advisor",
+        "Supporting evidence/documents related to the appeal reason"
+      ],
+      "student_acknowledgement_conditions": [
+        "Abide by the Academic Plan discussed with the Academic Advisor",
+        "Improve academic performance to achieve a minimum CGPA of 2.00",
+        "Acknowledge that this is the only appeal to which the student is entitled"
+      ],
+      "workflow_signatories_and_comments": [
+        "Finance",
+        "ISMC Officer (Visa Status)",
+        "Academic Advisor",
+        "HOD/HOP/HOPP",
+        "Dean/Director",
+        "Registrar / Senate for 4th dismissal onward",
+        "Academic Executive"
+      ],
+      "post_approval_note": "Academic Executive must forward this form to the Registrar’s Office for record-keeping and retain a copy for the Faculty.",
+      "reference": "ROF-05"
+    },
+    {
+      "form_name": "Course Withdrawal Form",
+      "category": "withdrawal",
+      "purpose": "Used to withdraw from one or more registered courses after the add/drop period but before the withdrawal deadline.",
+      "submission_window": "After the first two weeks but before the thirteenth week of the normal semester; after the first week but before the seventh week of the short semester",
+      "required_signatures": [
+        "Course lecturer / instructor",
+        "Dean of the School"
+      ],
+      "result_on_record": "W grade appears on transcript but is not counted toward GPA",
+      "official_date_rule": "Official withdrawal date is the date the University receives the withdrawal form",
+      "notes": [
+        "No withdrawal is permitted after the deadline except in extraordinary circumstances.",
+        "Unsatisfactory academic performance is not an acceptable reason for withdrawal after the deadline.",
+        "Withdrawing from a course does not remove outstanding fee obligations to the University."
+      ],
+      "reference": "Add / Drop and Withdrawal Policy"
+    },
+    {
+      "form_name": "University Withdrawal Form",
+      "category": "university_withdrawal",
+      "purpose": "Used to withdraw completely from the University.",
+      "submission_window": "Before the thirteenth week of the normal semester; before the seventh week of the short semester",
+      "required_clearances": [
+        "Dean",
+        "International Students Office (for international students)",
+        "Library",
+        "Bursary",
+        "Registrar’s Office"
+      ],
+      "notes": [
+        "Withdrawal is not official until the form is returned to the Registrar’s Office.",
+        "Failure to withdraw officially may jeopardize the student’s chances for readmission or recommendation by the University.",
+        "No fees can be refunded without full compliance with this withdrawal policy."
+      ],
+      "reference": "Withdrawal from the University"
+    },
+    {
+      "form_name": "Application for Postponement of Studies",
+      "category": "postponement",
+      "purpose": "Used when a student wishes to postpone studies with valid reasons.",
+      "obtain_from": [
+        "Registrar’s Office",
+        "Academic Office"
+      ],
+      "submit_to": [
+        "Academic Office"
+      ],
+      "required_approvals": [
+        "Dean of the Faculty",
+        "Vice President Academic"
+      ],
+      "deadline_limit": "Not allowed after the twelfth week of the long semester or after the sixth week of the short semester",
+      "notes": [
+        "Students have to fill up the Application for Postponement of Studies form available at the Registrar’s Office and the Academic Office.",
+        "Students are not allowed to postpone studies after the twelfth week of the long semester or after the sixth week of the short semester.",
+        "Students are not permitted to postpone studies in order to undertake studies at another institution.",
+        "Returning students retain the same academic status as before postponement."
+      ],
+      "reference": "Postponement Policy"
+    },
+    {
+      "form_code": "KLUST/FIN/BD/Form01-2025",
+      "form_name": "Fee Review Request Form",
+      "category": "bursary",
+      "purpose": "Used by a student to request the Bursary Department to review and check fees charged in the student account.",
+      "when_to_use": [
+        "When tuition fee or semester fee charges need review",
+        "When the student believes charges in the bursary account need checking"
+      ],
+      "submit_to": [
+        "Bursary Department"
+      ],
+      "required_fields": [
+        "Student's Name",
+        "ID No",
+        "Programme",
+        "IC / Passport No",
+        "Telephone Number",
+        "Email Address",
+        "Semester",
+        "Year",
+        "Fees To Be Reviewed"
+      ],
+      "required_attachments": [
+        "Course Registration",
+        "Credit/Subject Exemption Form",
+        "Other related supporting documents if requested by the Bursary Department"
+      ],
+      "notes": [
+        "Students are required to provide documents such as Course Registration and Credit/Subject Exemption Form.",
+        "Bursary Department may request other related documents from students and faculty."
+      ],
+      "reference": "Fee Review Request Form"
+    }
+  ]
+}
