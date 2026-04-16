@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eef4f7" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <title>ATLAS Student Advisor</title>
+  <style>
+    :root{
+      --bg1:#edf5f7;
+      --bg2:#e8f0f4;
+      --card:#ffffffcc;
+      --line:#d9e5ea;
+      --text:#243744;
+      --muted:#607887;
+      --accent:#7d6bff;
+      --shadow:0 18px 50px rgba(79,108,128,.10);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(142,197,214,.28), transparent 28%),
+        radial-gradient(circle at 80% 15%, rgba(125,107,255,.10), transparent 24%),
+        radial-gradient(circle at 75% 80%, rgba(148,194,203,.18), transparent 22%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:20px 12px 32px;
+    }
+
+    .app{
+      width:min(860px, 100%);
+    }
+
+    .shell{
+      background:var(--card);
+      backdrop-filter:blur(12px);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:24px 18px 18px;
+    }
+
+    .hero{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:12px;
+      margin-bottom:20px;
+    }
+
+    .logo{
+      width:72px;
+      height:72px;
+      border-radius:20px;
+      object-fit:cover;
+      box-shadow:0 12px 30px rgba(125,107,255,.18);
+      background:#f5f2ff;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(32px, 6vw, 52px);
+      line-height:1.05;
+      letter-spacing:-0.03em;
+      font-weight:700;
+    }
+
+    .subtitle{
+      max-width:640px;
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.5;
+    }
+
+    .top-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .pill-btn{
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      border-radius:999px;
+      padding:10px 14px;
+      font:inherit;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    .chat{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.72);
+      border-radius:22px;
+      min-height:220px;
+      max-height:360px;
+      overflow:auto;
+      padding:14px;
+      margin-bottom:16px;
+    }
+
+    .msg{
+      padding:14px 16px;
+      border-radius:18px;
+      margin:10px 0;
+      white-space:pre-wrap;
+      line-height:1.55;
+      font-size:15px;
+    }
+
+    .msg.bot{
+      background:#f7fafb;
+      border:1px solid #e1eaee;
+    }
+
+    .msg.you{
+      background:#f3f0ff;
+      border:1px solid #ddd6ff;
+    }
+
+    .label{
+      display:block;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:6px;
+      color:#6a7f8d;
+    }
+
+    .message-text{
+      white-space:pre-wrap;
+    }
+
+    .file-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-top:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.8);
+      border:1px solid #d7dfff;
+      color:#526979;
+      font-size:13px;
+      font-weight:600;
+      max-width:100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+
+    .composer{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      padding:12px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      background:rgba(255,255,255,.82);
+    }
+
+    textarea{
+      width:100%;
+      resize:none;
+      border:0;
+      outline:none;
+      background:transparent;
+      min-height:64px;
+      max-height:180px;
+      padding:4px 4px 0;
+      color:var(--text);
+      font:inherit;
+      line-height:1.5;
+    }
+
+    textarea::placeholder{
+      color:#89a0ad;
+    }
+
+    .controls{
+      display:grid;
+      grid-template-columns:1fr auto auto;
+      gap:10px;
+      align-items:center;
+    }
+
+    .upload-btn{
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:48px;
+      padding:0 14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#4f6674;
+      font-size:14px;
+      font-weight:600;
+      cursor:pointer;
+      overflow:hidden;
+      white-space:nowrap;
+    }
+
+    .upload-btn input[type=file]{
+      position:absolute;
+      inset:0;
+      opacity:0;
+      cursor:pointer;
+    }
+
+    .selected-file-preview{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border:1px solid #d7dfff;
+      background:rgba(255,255,255,.82);
+      border-radius:14px;
+      color:#526979;
+      font-size:13px;
+      font-weight:600;
+      max-width:100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+
+    .mic-btn{
+      width:48px;
+      height:48px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      color:var(--text);
+      font-size:18px;
+      cursor:pointer;
+    }
+
+    .mic-btn.listening{
+      background:#efeaff;
+      border-color:#b9a8ff;
+    }
+
+    .mic-btn:disabled{
+      opacity:.45;
+      cursor:not-allowed;
+    }
+
+    .send{
+      width:48px;
+      height:48px;
+      border:0;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--accent), #98c8d2);
+      color:#fff;
+      font-size:18px;
+      cursor:pointer;
+      box-shadow:0 10px 24px rgba(125,107,255,.22);
+    }
+
+    .send:disabled{
+      opacity:.65;
+      cursor:not-allowed;
+    }
+
+    .meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      margin-top:12px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    .hint{max-width:540px}
+    .status{text-align:right}
+
+    @media (max-width:700px){
+      .shell{
+        padding:20px 14px 16px;
+        border-radius:24px;
+      }
+
+      .chat{
+        min-height:180px;
+        max-height:300px;
+      }
+
+      .controls{
+        grid-template-columns:1fr 48px 48px;
+      }
+
+      .meta{
+        flex-direction:column;
+      }
+
+      .status{
+        text-align:left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="shell">
+      <div class="hero">
+        <img class="logo" src="/atlas-logo.png" alt="ATLAS logo" />
+        <h1>Hello. I am ATLAS.</h1>
+        <p class="subtitle">Your FEST student advisor.</p>
+
+        <div class="top-actions">
+          <button id="voiceToggle" type="button" class="pill-btn" aria-pressed="true">
+            🔊 Voice greeting on
+          </button>
+          <button id="replyVoiceToggle" type="button" class="pill-btn" aria-pressed="false">
+            🗣️ Reply voice off
+          </button>
+          <button id="installBtn" type="button" class="pill-btn" hidden>
+            Install ATLAS
+          </button>
+        </div>
+      </div>
+
+      <div id="messages" class="chat">
+        <div class="msg bot">
+          <span class="label">ATLAS</span>
+          <div class="message-text">How can I help you today?</div>
+        </div>
+      </div>
+
+      <div class="composer">
+        <textarea id="message" placeholder="Ask a question or upload a form..."></textarea>
+
+        <div class="controls">
+          <label class="upload-btn" title="Upload form or document">
+            <span>📎</span>
+            <span>Upload form</span>
+            <input id="file" type="file" accept=".pdf,.png,.jpg,.jpeg,.txt,.json,.csv,.md" />
+          </label>
+
+          <button id="micBtn" class="mic-btn" type="button" aria-label="Use voice input">🎤</button>
+
+          <button id="send" class="send" aria-label="Send">→</button>
+        </div>
+
+        <div id="selectedFilePreview" class="selected-file-preview" hidden></div>
+      </div>
+
+      <div class="meta">
+        <div id="voiceStatus" class="hint">Ask about your studies or get guidance on the courses to take this semester.</div>
+        <div class="status">Session memory enabled</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const messages = document.getElementById('messages');
+    const message = document.getElementById('message');
+    const file = document.getElementById('file');
+    const send = document.getElementById('send');
+    const micBtn = document.getElementById('micBtn');
+    const voiceToggle = document.getElementById('voiceToggle');
+    const replyVoiceToggle = document.getElementById('replyVoiceToggle');
+    const voiceStatus = document.getElementById('voiceStatus');
+    const installBtn = document.getElementById('installBtn');
+    const selectedFilePreview = document.getElementById('selectedFilePreview');
+
+    const STORAGE_KEY = 'atlas_session_context_v1';
+    const VOICE_ENABLED_KEY = 'atlas_voice_enabled_v1';
+    const REPLY_VOICE_ENABLED_KEY = 'atlas_reply_voice_enabled_v1';
+
+    let deferredPrompt = null;
+    let isSending = false;
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+    const SpeechRecognition =
+      !isIOS && (window.SpeechRecognition || window.webkitSpeechRecognition || null);
+
+    let recognition = null;
+    let isListening = false;
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function addMessage({ cls, who, text = '', fileName = '' }) {
+      const div = document.createElement('div');
+      div.className = 'msg ' + cls;
+
+      let inner = `<span class="label">${escapeHtml(who)}</span>`;
+
+      if (text) {
+        inner += `<div class="message-text">${escapeHtml(text)}</div>`;
+      }
+
+      if (fileName) {
+        inner += `<div class="file-chip">📎 ${escapeHtml(fileName)}</div>`;
+      }
+
+      div.innerHTML = inner;
+      messages.appendChild(div);
+      messages.scrollTop = messages.scrollHeight;
+      return div;
+    }
+
+    function add(cls, who, text) {
+      return addMessage({ cls, who, text });
+    }
+
+    function getSessionContext() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function setSessionContext(context) {
+      try {
+        if (context) localStorage.setItem(STORAGE_KEY, JSON.stringify(context));
+      } catch {}
+    }
+
+    function getVoiceEnabled() {
+      try {
+        const raw = localStorage.getItem(VOICE_ENABLED_KEY);
+        return raw === null ? true : raw === 'true';
+      } catch {
+        return true;
+      }
+    }
+
+    function setVoiceEnabled(value) {
+      try {
+        localStorage.setItem(VOICE_ENABLED_KEY, String(Boolean(value)));
+      } catch {}
+    }
+
+    function getReplyVoiceEnabled() {
+      try {
+        return localStorage.getItem(REPLY_VOICE_ENABLED_KEY) === 'true';
+      } catch {
+        return false;
+      }
+    }
+
+    function setReplyVoiceEnabled(value) {
+      try {
+        localStorage.setItem(REPLY_VOICE_ENABLED_KEY, String(Boolean(value)));
+      } catch {}
+    }
+
+    function updateVoiceToggle() {
+      const enabled = getVoiceEnabled();
+      voiceToggle.textContent = enabled ? '🔊 Voice greeting on' : '🔇 Voice greeting off';
+      voiceToggle.setAttribute('aria-pressed', String(enabled));
+    }
+
+    function updateReplyVoiceToggle() {
+      const enabled = getReplyVoiceEnabled();
+      replyVoiceToggle.textContent = enabled ? '🗣️ Reply voice on' : '🗣️ Reply voice off';
+      replyVoiceToggle.setAttribute('aria-pressed', String(enabled));
+    }
+
+    function getPreferredVoice() {
+      if (!('speechSynthesis' in window)) return null;
+      const voices = window.speechSynthesis.getVoices();
+      return (
+        voices.find(v => v.lang === 'en-GB') ||
+        voices.find(v => v.lang === 'en-US') ||
+        voices[0] ||
+        null
+      );
+    }
+
+    function speakNow(text) {
+      if (!('speechSynthesis' in window)) return;
+      const spoken = String(text || '').trim();
+      if (!spoken) return;
+
+      const utterance = new SpeechSynthesisUtterance(spoken);
+      const voice = getPreferredVoice();
+      if (voice) utterance.voice = voice;
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function speakGreeting() {
+      if (!getVoiceEnabled()) return;
+      speakNow('Hello. I am ATLAS. How can I help you today?');
+    }
+
+    function cleanReplyForSpeech(text) {
+      return String(text || '')
+        .replace(/ATLAS\s*·\s*/gi, '')
+        .replace(/[_*#`>-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function speakReply(text) {
+      if (!getReplyVoiceEnabled()) return;
+      speakNow(cleanReplyForSpeech(text));
+    }
+
+    function getDefaultStatus() {
+      if (isIOS) {
+        return 'Voice input is unavailable on iPhone. You can still type your question.';
+      }
+      if (!SpeechRecognition) {
+        return 'Voice input is not supported in this browser. You can still type your question.';
+      }
+      return 'Ask about your studies or get guidance on the courses to take this semester.';
+    }
+
+    function setMicState(listening) {
+      isListening = listening;
+      micBtn.classList.toggle('listening', listening);
+      micBtn.textContent = listening ? '🎙️' : '🎤';
+      voiceStatus.textContent = listening
+        ? 'Listening... Speak your question clearly.'
+        : getDefaultStatus();
+    }
+
+    function initSpeechRecognition() {
+      if (!SpeechRecognition) return null;
+
+      const recog = new SpeechRecognition();
+      recog.lang = 'en-US';
+      recog.interimResults = true;
+      recog.maxAlternatives = 1;
+      recog.continuous = false;
+
+      recog.onstart = () => setMicState(true);
+
+      recog.onresult = (event) => {
+        let finalTranscript = '';
+        let interim = '';
+
+        for (let i = 0; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript;
+          if (event.results[i].isFinal) {
+            finalTranscript += transcript + ' ';
+          } else {
+            interim += transcript;
+          }
+        }
+
+        message.value = (finalTranscript + interim).trim();
+        autoResizeTextarea();
+      };
+
+      recog.onerror = (event) => {
+        setMicState(false);
+        const err = event?.error || 'unknown';
+        voiceStatus.textContent = `Voice input error: ${err}.`;
+      };
+
+      recog.onend = () => setMicState(false);
+
+      return recog;
+    }
+
+    function autoResizeTextarea() {
+      message.style.height = '64px';
+      message.style.height = Math.min(message.scrollHeight, 180) + 'px';
+    }
+
+    function updateSelectedFilePreview() {
+      const f = file.files[0];
+
+      if (!f) {
+        selectedFilePreview.hidden = true;
+        selectedFilePreview.textContent = '';
+        return;
+      }
+
+      selectedFilePreview.hidden = false;
+      selectedFilePreview.textContent = `📎 ${f.name}`;
+    }
+
+    async function fileToBase64(selectedFile) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const result = String(reader.result || '');
+          const commaIndex = result.indexOf(',');
+          resolve(commaIndex >= 0 ? result.slice(commaIndex + 1) : result);
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(selectedFile);
+      });
+    }
+
+    async function readTextLikeFile(selectedFile) {
+      if (!selectedFile) return '';
+      const textLike = ['text/plain', 'application/json', 'text/csv', 'text/markdown'];
+      const name = (selectedFile.name || '').toLowerCase();
+      const textLikeExt = ['.txt', '.json', '.csv', '.md'];
+      const canRead = textLike.includes(selectedFile.type) || textLikeExt.some(ext => name.endsWith(ext));
+      if (!canRead) return '';
+      return await selectedFile.text();
+    }
+
+    async function sendMessage() {
+      if (isSending) return;
+
+      const text = message.value.trim();
+      const f = file.files[0];
+      if (!text && !f) return;
+
+      isSending = true;
+      send.disabled = true;
+
+      addMessage({
+        cls: 'you',
+        who: 'You',
+        text,
+        fileName: f ? f.name : ''
+      });
+
+      let extractedFileText = '';
+      let fileUpload = null;
+
+      try {
+        extractedFileText = await readTextLikeFile(f);
+      } catch {}
+
+      if (f) {
+        try {
+          fileUpload = {
+            filename: f.name,
+            type: f.type || null,
+            size: f.size || null,
+            base64: await fileToBase64(f)
+          };
+        } catch {}
+      }
+
+      const payload = {
+        message: text,
+        fileMeta: f ? { filename: f.name, type: f.type || null, size: f.size || null } : null,
+        fileUpload,
+        documentText: extractedFileText,
+        sessionContext: getSessionContext()
+      };
+
+      message.value = '';
+      file.value = '';
+      autoResizeTextarea();
+      updateSelectedFilePreview();
+
+      const botNode = add('bot', 'ATLAS', 'Thinking...');
+
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        if (data && data.sessionContext) setSessionContext(data.sessionContext);
+
+        const atlasReply = data?.reply || 'No response received.';
+        botNode.innerHTML = `<span class="label">ATLAS</span><div class="message-text">${escapeHtml(atlasReply)}</div>`;
+        speakReply(atlasReply);
+      } catch (err) {
+        const failReply = 'ATLAS could not reach the server. Please try again.';
+        botNode.innerHTML = `<span class="label">ATLAS</span><div class="message-text">${escapeHtml(failReply)}</div>`;
+        speakReply(failReply);
+      } finally {
+        isSending = false;
+        send.disabled = false;
+      }
+    }
+
+    voiceToggle.addEventListener('click', () => {
+      const next = !getVoiceEnabled();
+      setVoiceEnabled(next);
+      updateVoiceToggle();
+      if (next) speakGreeting();
+    });
+
+    replyVoiceToggle.addEventListener('click', () => {
+      const next = !getReplyVoiceEnabled();
+      setReplyVoiceEnabled(next);
+      updateReplyVoiceToggle();
+    });
+
+    if (SpeechRecognition) {
+      recognition = initSpeechRecognition();
+
+      micBtn.addEventListener('click', () => {
+        if (!recognition) return;
+        if (isListening) {
+          recognition.stop();
+          return;
+        }
+        try {
+          recognition.start();
+        } catch {
+          voiceStatus.textContent = 'Voice input could not start. Try Chrome on Android.';
+        }
+      });
+    } else {
+      micBtn.disabled = true;
+      micBtn.hidden = isIOS;
+    }
+
+    send.addEventListener('click', sendMessage);
+    file.addEventListener('change', updateSelectedFilePreview);
+
+    message.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    message.addEventListener('input', autoResizeTextarea);
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installBtn.hidden = false;
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.hidden = true;
+    });
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.getVoices();
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+      };
+    }
+
+    let greetedThisVisit = false;
+    function firstInteractionGreeting() {
+      if (greetedThisVisit) return;
+      greetedThisVisit = true;
+      speakGreeting();
+    }
+
+    window.addEventListener('click', firstInteractionGreeting, { once: true });
+    window.addEventListener('touchstart', firstInteractionGreeting, { once: true });
+    window.addEventListener('keydown', firstInteractionGreeting, { once: true });
+
+    window.addEventListener('load', () => {
+      updateVoiceToggle();
+      updateReplyVoiceToggle();
+      autoResizeTextarea();
+      updateSelectedFilePreview();
+      voiceStatus.textContent = getDefaultStatus();
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</body>
+</html>
